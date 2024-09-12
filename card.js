@@ -3,27 +3,26 @@ class CardNews extends HTMLElement {
         super();
         this.attachShadow({ mode: "open" });
 
-        // Definir estilos para o card
         this.shadowRoot.innerHTML = `
             <style>
                 .card {
                     cursor: pointer;
                     transition: box-shadow 0.3s;
-                    width: 100%; /* Ajuste para ocupar toda a largura da coluna */
-                    max-width: 18rem; /* Ajuste conforme necessário */
-                    border: 1px solid #ddd; /* Adicione uma borda se desejar */
-                    border-radius: 0.5rem; /* Adicione bordas arredondadas se desejar */
-                    overflow: hidden; /* Garante que nada "vaze" para fora do card */
-                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra leve */
-                    margin-bottom: 1rem; /* Espaçamento inferior entre os cards */
+                    width: 100%; 
+                    max-width: 18rem; 
+                    border: 1px solid #ddd; 
+                    border-radius: 0.5rem; 
+                    overflow: hidden; 
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+                    margin-bottom: 1rem; 
                 }
                 .card:hover {
                     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
                 }
                 .card img {
-                    width: 100%; /* Ocupa a largura total do card */
-                    height: auto; /* Mantém a proporção da imagem */
-                    object-fit: cover; /* Ajusta a imagem para cobrir o espaço do container */
+                    width: 100%; 
+                    height: auto; 
+                    object-fit: cover; 
                 }
                 .card-body {
                     padding: 1rem;
@@ -34,7 +33,7 @@ class CardNews extends HTMLElement {
                     margin-bottom: 0.5rem;
                 }
                 .card-text {
-                    color: #555; /* Cor do texto para valor do produto */
+                    color: #555;
                 }
             </style>
             <div class="card">
