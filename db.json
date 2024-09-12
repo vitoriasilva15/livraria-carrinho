@@ -1,0 +1,76 @@
+{
+    "produtos": [
+      {
+        "id": 1,
+        "imagem": "fotos/sete maridos.jpeg",
+        "titulo": "Os Sete Maridos de Evelyn Hugo",
+        "autor": "Taylor Jenkins Reid",
+        "descricao": "Páginas: 360",
+        "preco": "$27,99"
+      },
+      {
+        "id": 2,
+        "imagem": "fotos/box jane.jpeg",
+        "titulo": "Coleção Jane Austen",
+        "autor": "Jane Austen",
+        "descricao": "Páginas: 600",
+        "preco": "$52,21"
+      },
+      {
+        "id": 3,
+        "imagem": "fotos/cronicas.jpeg",
+        "titulo": "As Crônicas de Nárnia",
+        "autor": "C. S. Lewis",
+        "descricao": "Páginas: 752",
+        "preco": "$30,99"
+      },
+      {
+        "id": 4,
+        "imagem": "fotos/linguagem c.jpeg",
+        "titulo": "Linguagem C",
+        "autor": "André Backes",
+        "descricao": "Páginas: 279",
+        "preco": "$196,99"
+      },
+      {
+        "id": 5,
+        "imagem": "fotos/pequeno principe.jpeg",
+        "titulo": "O Pequeno Príncipe",
+        "autor": "Antoine de Saint-Exupéry",
+        "descricao": "Páginas: 93",
+        "preco": "$14,89"
+      },
+      {
+        "id": 6,
+        "imagem": "fotos/diario de anne.jpeg",
+        "titulo": "O Diário de Anne Frank",
+        "autor": "Anne Frank",
+        "descricao": "Páginas: 192",
+        "preco": "$25,63"
+      },
+      {
+        "id": 7,
+        "imagem": "fotos/tmi.jpeg",
+        "titulo": "Os Instrumentos Mortais",
+        "autor": "Cassandra Clare",
+        "descricao": "Páginas: 2660",
+        "preco": "$207,92"
+      },
+      {
+        "id": 8,
+        "imagem": "fotos/1984.jpeg",
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "descricao": "Páginas: 288",
+        "preco": "$22,42"
+      },
+      {
+        "id": 9,
+        "imagem": "fotos/breves.jpeg",
+        "titulo": "Breves Respostas para Grandes Questões",
+        "autor": "Stephen Hawking",
+        "descricao": "Páginas: 256",
+        "preco": "$55,92"
+      }
+    ]
+  }

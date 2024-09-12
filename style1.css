@@ -1,0 +1,111 @@
+body {
+    background-color: #e7cbe7;
+    color:#490749
+}
+
+
+.equal-height [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+}
+
+.equal-height [class*="col-"] .card {
+    flex: 1;
+}
+.navbar a:not(:last-child) {
+    margin-right: 100px;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+  color: #e0a3db; 
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-color: #e0a3db; 
+}
+
+
+.purple-header {
+    background-color: #812085;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.profile-picture {
+    max-width: 300px;
+    margin-top: 5px;
+}
+
+
+.category-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+button{
+    background-color: #e7cbe7;
+}
+
+.footer {
+    background-color: #812085;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px; 
+    width: 100%;
+    bottom: 0;
+    font-size: 16px; 
+  }
+
+  .footer i {
+    margin-right: 5px;
+  }
+
+  .btn-purple {
+    color: #fff;
+    background-color: #800080; 
+    border-color: #800080; 
+  }
+
+  .btn-purple:hover {
+    background-color: #6a006a;
+    border-color: #6a006a;
+  }
+
+/* Ajuste para o card */
+.card {
+  width: 100%; /* Ocupar toda a largura da coluna */
+  max-width: 18rem; /* Defina um tamanho máximo */
+  margin: 1rem; /* Espaçamento */
+  overflow: hidden; /* Garante que nada "vaze" para fora do card */
+}
+
+/* Ajuste para a imagem dentro do card */
+.card-img-top {
+  width: 100%; /* Ocupa a largura total do card */
+  height: auto; /* Ajusta a altura proporcionalmente */
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+}
+
+/* Se necessário, ajuste o contêiner de colunas */
+.col-3 {
+  flex: 1 0 21%; /* Ajuste para garantir que ocupem o espaço adequadamente */
+  max-width: 25%; /* Ajusta a largura máxima */
+}
+/* Contêiner pai dos cards */
+.container {
+  max-width: 100%; /* Ajuste se necessário */
+}
+
+/* Certifique-se de que o layout é flexível e responsivo */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Espaçamento entre colunas */
+}
+
+
+
+
+  

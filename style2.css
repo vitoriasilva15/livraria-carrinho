@@ -1,0 +1,50 @@
+body {
+    background-color: #e7cbe7;
+    color:#490749
+    }
+
+    .navbar-custom {
+        background-color: #800080; 
+      }
+  
+      .navbar-custom .navbar-brand,
+      .navbar-custom .navbar-nav .nav-link {
+        color: #e0a3db; 
+      }
+  
+      .navbar-custom .navbar-toggler-icon {
+        background-color: #e0a3db; 
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 100px auto;
+        }
+
+    table {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+  
+      th, td {
+        text-align: center;
+      }
+  
+      .total-row {
+        font-weight: bold;
+      }
+
+    .form-group {
+    margin-bottom: 20px;
+    }
+
+    .btn-purple {
+        color: #fff;
+        background-color: #800080; 
+        border-color: #800080; 
+      }
+  
+      .btn-purple:hover {
+        background-color: #6a006a;
+        border-color: #6a006a;
+      }

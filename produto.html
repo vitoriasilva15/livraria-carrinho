@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Produto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: 'open sans';
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .preview {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 996px) {
+            .preview {
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #c9b0cf;
+            }
+        }
+
+        .preview-pic {
+            flex-grow: 1;
+        }
+
+        .preview-thumbnail.nav-tabs {
+            border: none;
+            margin-top: 15px;
+        }
+
+        .preview-thumbnail.nav-tabs li {
+            width: 18%;
+            margin-right: 2.5%;
+        }
+
+        .preview-thumbnail.nav-tabs li img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .preview-thumbnail.nav-tabs li a {
+            padding: 0;
+            margin: 0;
+        }
+
+        .preview-thumbnail.nav-tabs li:last-of-type {
+            margin-right: 0;
+        }
+
+        .tab-content {
+            overflow: hidden;
+        }
+
+        .tab-content img {
+            width: 100%;
+            animation-name: opacity;
+            animation-duration: .3s;
+        }
+
+        .card {
+            margin-top: 50px;
+            background: #af9cb8;
+            padding: 3em;
+            line-height: 1.5em;
+        }
+
+        @media screen and (min-width: 997px) {
+            .wrapper {
+                display: flex;
+            }
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .colors {
+            flex-grow: 1;
+        }
+
+        .product-title,
+        .price,
+        .sizes,
+        .colors {
+            text-transform: UPPERCASE;
+            font-weight: bold;
+        }
+
+        .checked,
+        .price span {
+            color: #471e5f;
+        }
+
+        .product-title,
+        .rating,
+        .product-description,
+        .price,
+        .vote,
+        .sizes {
+            margin-bottom: 15px;
+        }
+
+        .product-title {
+            margin-top: 0;
+        }
+
+        .size {
+            margin-right: 10px;
+        }
+
+        .size:first-of-type {
+            margin-left: 40px;
+        }
+
+        .color {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            height: 2em;
+            width: 2em;
+            border-radius: 2px;
+        }
+
+        .color:first-of-type {
+            margin-left: 20px;
+        }
+
+        .add-to-cart,
+        .like {
+            background: #5b147c;
+            padding: 1.2em 1.5em;
+            border: none;
+            text-transform: UPPERCASE;
+            font-weight: bold;
+            color: #d2c2d6;
+            transition: background .3s ease;
+        }
+
+        .add-to-cart:hover,
+        .like:hover {
+            background: #6e3983;
+            color: #fff;
+        }
+
+        .not-available {
+            text-align: center;
+            line-height: 2em;
+        }
+
+        .not-available:before {
+            font-family: fontawesome;
+            content: "\f00d";
+            color: #fff;
+        }
+
+        .orange {
+            background: #8f30b4;
+        }
+
+        .green {
+            background: #85ad00;
+        }
+
+        .blue {
+            background: #0076ad;
+        }
+
+        .tooltip-inner {
+            padding: 1.3em;
+        }
+
+        .body-product {
+            background: #d2c2d6;
+            padding: 0 0 4em;
+        }
+
+        .footer-product {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer-product a {
+            color: #d2c2d6;
+            font-size: 1.3em;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #5b147c;
+            text-transform: UPPERCASE;
+            border-radius: 5px;
+            transition: background .3s ease;
+        }
+
+        .footer-product a:hover {
+            text-decoration: none;
+            background: #5b147c;
+        }
+    </style>
+</head>
+
+
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <div class="container-fliud">
+                <div class="wrapper row">
+                    <div class="preview col-md-6">
+                        <div class="preview-pic tab-content">
+                            <div class="tab-pane active" id="pic-1">
+                                <img src="http://placekitten.com/400/252" alt="Image 1" />
+                            </div>
+                        </div>
+                        <ul class="preview-thumbnail nav nav-tabs">
+                            <li class="active">
+                                <a data-target="#pic-1" data-toggle="tab">
+                                    <img src="http://placekitten.com/200/126" alt="Image 1" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="details col-md-6">
+                        <h3 class="product-title" id="produto-titulo">Título do Produto</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <span class="review-no"></span>
+                        </div>
+                        <p class="product-description" id="produto-descricao">Descriçao do produto</p>
+                        <h4 class="price">Preço <span id="produto-preco">$180</span></h4>
+                        <div class="action">
+                            <button id="adicionar-carrinho" class="add-to-cart btn btn-default" type="button">Adicionar ao carrinho</button>
+                            <button class="like btn btn-default" type="button">
+                                <span class="fa fa-heart"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-product">
+        <a href="index.html"> Home</a>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+    <script>
+
+        
+        document.addEventListener('DOMContentLoaded', async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const produtoId = urlParams.get('produtoId');
+
+            try {
+                const res = await fetch(`http://localhost:3000/produtos/${produtoId}`);
+                const produto = await res.json();
+
+                document.getElementById('produto-titulo').innerText = produto.titulo;
+                document.getElementById('produto-descricao').innerText = produto.descricao;
+                document.getElementById('produto-preco').innerText = `R$ ${produto.preco}`;
+                document.querySelector('.tab-pane.active img').src = produto.imagem;
+                document.querySelector('.preview-thumbnail img').src = produto.imagem;
+                
+
+            } catch (err) {
+                console.error('Erro ao buscar detalhes do produto:', err);
+            }
+
+            document.getElementById('adicionar-carrinho').addEventListener('click', () => {
+                    adicionarAoCarrinho(produtoId);
+            });
+        });
+
+
+        function adicionarAoCarrinho(produtoId) {
+            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+            if (!carrinho.find(item => item.id === produtoId)) {
+                carrinho.push({ id: produtoId, quantidade: 1});
+                localStorage.setItem('carrinho', JSON.stringify(carrinho));
+          
+            }
+            window.location.href = 'carrinho.html'; 
+        }
+        
+
+    </script>
+     
+
+
+</html>
